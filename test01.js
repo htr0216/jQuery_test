@@ -106,7 +106,75 @@ while (true) {
 }*/
 
 //関数
+/*
 function calc(x) { 　//関数定義宣言　関数(変数[パラメータ、引数])
     return x * 2;　　//関数の実行結果を返す　(関数)　*　数値
 }
 alert(calc(3));
+*/
+
+//課題1.2
+var answer = prompt('「正の数」「負の数」判定');
+if (answer >= 1) {
+    alert('「正の数」です');
+} else if (answer <= -1) {
+    alert('「負の数」です');
+} else {
+    alert('数値を入力してください');
+}
+/*
+//課題3
+var animals = ['パンダ', 'ライオン', 'キリン'];
+
+var i = 0;
+while (true) {
+    if (i >= animals.length) {
+        break;
+    }
+    
+    alert(animals[i]);
+    i++;
+}
+*/
+//課題4
+/*
+var animals = ['パンダ', 'ライオン', 'キリン'];
+var animal =prompt('パンダ、ライオン、キリン から1つ入力してください');
+var i = 0;
+while (i < animals.length) {
+    if (animal == 'ライオン') {
+        alert(animals[1]);　　　　　//課題５
+        break;
+    }
+    alert(animals[i]);
+    i++;
+}
+*/
+
+//課題6.7
+/*
+var animals = [
+    {'name': 'パンダ', 'weight': 80},
+    {'name': 'ライオン', 'weight': 200},
+    {'name': 'キリン', 'weight': 300}
+    ];
+var animal = prompt('パンダ、ライオン、キリン から1つ入力してください');
+switch (animal) {
+    case 'パンダ':
+        alert('動物名' + animals[0].name + '体重' + animals[0].weight+'kg');
+        break;
+    case 'ライオン':
+        alert('動物名' + animals[1].name + '体重' + animals[1].weight+'kg');
+        break;
+    case 'キリン':
+        alert('動物名' + animals[2].name + '体重' + animals[2].weight+'kg');
+        break;
+}
+*/
+
+//課題8
+var x = prompt('円の半径を入力してください');
+function area(x) {
+    return x *　x * 3.14;
+}
+alert('面積は'+ area(x));
